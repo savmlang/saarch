@@ -4,4 +4,4 @@ This article explores the reasons for the Sa Programming Language. It also discu
 
 ## Table of Contents
 
-- The Problem
+- [The Problem](./pages/statement/)
