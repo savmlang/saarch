@@ -2,15 +2,13 @@
 
 Virtual Machines are laggy, more or less of the time.
 
-In fact, even production virtual machines are fundamentally built on the model of usage of
-acoustic speculation with compilation and decompilation ecosystem as prevalent even in statically
-typed programming languages.
+In fact, even production virtual machines are fundamentally built on the model of speculative optization through a system of compilation, deoptimization, prevalent even in statically typed programming languages.
 
 ## Impact
 
-Such an outlook towards virtual machine systems would ultimately lead to reduced efficiency, JIT tax,
-speculation tax, runtime tax, FFI overhead which results in a vendor lock in for the subsystems
-and frameworks.
+Such an outlook towards virtual machine systems would ultimately lead to reduced efficiency, JIT tax, speculation tax, runtime tax, FFI overhead which results in a vendor lock in for the subsystems and frameworks.
+
+Along with that, general purpose language Virtual Machines have also been associated with non determinism, mini "Stop The World" pauses for garbage collection that ultimately add a cost to portability.
 
 The solution to this problem, as has been devised, are as follows:
 
@@ -35,8 +33,10 @@ Yet, one form of VM is still missing - A VM with :
 - Fast and efficient JIT compilation
 - Async-friendly / cooperative
 - Near machine-code ISA
+- Deterministic Execution
 - Fast warm-up
 
-That is what the Sa VM Philosophically would want to target!
+[Our Scopes](./scopes.md)
 
+<!-- We would like to back up the information with a few formal proofs : -->
 <!-- TODO: Add Real Life examples -->
